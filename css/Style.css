@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    padding: 30px;
+    background: linear-gradient(90deg, #0e4490 0.000%, #0988ca 16.667%, #2cc6e3 33.333%, #6ce4d1 50.000%, #b3d49b 66.667%, #ea9e55 83.333%, #fd581b 100.000%);
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 95vh;
+    gap: 2rem;
+}
+
+.letra{
+    font-family: 'Nunito',sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+    text-align: start;
+}
+
+.form-group{
+    margin: 5px 0;
+    border-radius: 8xp;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    margin: 20px;
+    color: black;
+    height: 500px;
+    align-items: none;
+}
+
+
+.card {
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 15px;
+    padding-left: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    box-shadow: 0 2px 5px rgb(131, 127, 127);
+    transition: transform 0.2s;
+    font-family: 'Nunito',sans-serif;
+    
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+.card h3 {
+   font-size: 1.1rem;
+    margin: 10px 0 5px 0;
+    color: black; 
+
+}
+
+.card p {
+    font-size: 0.8rem;
+    color: black;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+
